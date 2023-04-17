@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunktweets_technical_task=self.webpackChunktweets_technical_task||[]).push([[936],{936:function(e,s,l){l.r(s),l.d(s,{default:function(){return a}});l(791);var t=l(87),c={homeDiv:"Home_homeDiv__glXVo",welcome:"Home_welcome__8hWwL",link:"Home_link__2zIq5"},n=l(184);function a(){return(0,n.jsxs)("div",{className:c.homeDiv,children:[(0,n.jsx)("p",{className:c.welcome,children:"Hello! It's Homepage. To see tweets page please click"}),(0,n.jsx)(t.OL,{to:"/tweets",className:c.link,children:"here."})]})}}}]);
+//# sourceMappingURL=936.ef486e77.chunk.js.map
