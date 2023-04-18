@@ -1,15 +1,41 @@
-import axios from "axios";
+import axios from 'axios';
 
 const api = axios.create({
-  baseURL: "https://643abc9190cd4ba5630062e8.mockapi.io",
+  baseURL: 'https://643abc9190cd4ba5630062e8.mockapi.io',
 });
 
 export const fetchUsers = async (page = 1) => {
   try {
-    const response = await api.get("/users", {
+    const response = await api.get('/users', {
       params: {
         page,
         limit: 12,
+      },
+    });
+    return response.data;
+  } catch (error) {
+    console.error(error);
+  }
+};
+
+export const fetchFollowers = async () => {
+  try {
+    const response = await api.get('/users', {
+      params: {
+        isFollowed: true,
+      },
+    });
+    return response.data;
+  } catch (error) {
+    console.error(error);
+  }
+};
+
+export const fetchNonFollowers = async () => {
+  try {
+    const response = await api.get('/users', {
+      params: {
+        isFollowed: false,
       },
     });
     return response.data;
